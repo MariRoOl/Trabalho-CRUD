@@ -1,7 +1,15 @@
 package com.juniorf;
 
+import javax.servlet.Filter;
+
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.filter.CharacterEncodingFilter;
+import org.springframework.web.filter.CorsFilter;
 
 @EnableAutoConfiguration
 @SpringBootApplication
